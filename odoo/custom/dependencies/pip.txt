@@ -1,0 +1,11 @@
+checksumdir
+#git+https://github.com/OCA/openupgradelib.git@master
+unicodecsv
+unidecode
+requests
+xlsxwriter
+cachetools>=2.0.1,<3.0.0
+odoorpc
+pycountry>=16.11.8
+#pyOpenSSL
+#pysftp

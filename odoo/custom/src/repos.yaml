@@ -1,0 +1,157 @@
+# Odoo is always required
+./odoo:
+    defaults:
+        # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
+        # You may need a bigger depth when merging PRs (use $DEPTH_MERGE 
+        # for a sane value of 100 commits)
+        depth: $DEPTH_DEFAULT
+    remotes:
+        ocb: https://github.com/OCA/OCB.git
+        odoo: https://github.com/odoo/odoo.git
+        # openupgrade: https://github.com/OCA/OpenUpgrade.git
+    target:
+        ocb $ODOO_VERSION
+    merges:
+        - ocb $ODOO_VERSION
+        # Example of a merge of the PR with the number <PR>
+        # - oca refs/pull/<PR>/head
+
+./l10n-spain:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/l10n-spain.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./hootel:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        dockdoo: https://github.com/hootel/hootel.git
+    target:
+        dockdoo $ODOO_VERSION
+    merges:
+        - dockdoo $ODOO_VERSION
+
+./partner-contact:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/partner-contact.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./web:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/web.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./server-tools:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/server-tools.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./bank-payment:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/bank-payment.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./odoo_web_login:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        dockdoo: https://github.com/dockdoo/odoo_web_login.git
+    target:
+        dockdoo $ODOO_VERSION
+    merges:
+        - dockdoo $ODOO_VERSION
+
+./account-payment:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/account-payment
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./account-financial-tools:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/account-financial-tools
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./community-data-files:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/community-data-files
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./connector:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/connector
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./queue:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/queue
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./server-ux:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/server-ux
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./migration-tools:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/dockdoo/migration-tools
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION

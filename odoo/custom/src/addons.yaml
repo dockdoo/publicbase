@@ -1,0 +1,30 @@
+l10n-spain:
+ - "l10n_es_account_invoice_sequence"
+ - "l10n_es_partner"
+ - "l10n_es_toponyms"
+hootel:
+ - "*"
+partner-contact:
+ - "*"
+web:
+ - "*"
+server-tools:
+ - "*"
+bank-payment:
+ - "*"
+odoo_web_login:
+ - "*"
+account-payment:
+ - "account_payment_return"
+account-financial-tools:
+ - "*"
+community-data-files:
+ - "*"
+connector:
+ - "*"
+queue:
+ - "*"
+server-ux:
+ - "*"
+migration-tools:
+ - "*"
